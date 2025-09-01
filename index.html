@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>We1Win 代理推广 | Agent Promotion</title>
+<style>
+  body {
+    margin: 0; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: white; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; min-height: 100vh;
+    text-align: center; padding: 20px;
+    animation: bgmove 15s linear infinite alternate;
+  }
+  @keyframes bgmove {
+    0% {background-position: 0% 50%;}
+    100% {background-position: 100% 50%;}
+  }
+  header {
+    font-size: 3rem; font-weight: 900; margin-bottom: 0.2em;
+    text-shadow: 0 0 10px rgba(255,255,255,0.7);
+  }
+  p {
+    font-size: 1.2rem; max-width: 480px; line-height: 1.6;
+    margin-bottom: 2em;
+    text-shadow: 0 0 8px rgba(0,0,0,0.3);
+  }
+  a.button {
+    display: inline-block;
+    background: #fff;
+    color: #ff4b2b;
+    padding: 15px 40px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 40px;
+    text-decoration: none;
+    box-shadow: 0 6px 20px rgba(255, 75, 43, 0.6);
+    transition: all 0.3s ease;
+  }
+  a.button:hover {
+    background: #ffeaea;
+    color: #d6360d;
+    box-shadow: 0 10px 30px rgba(255, 75, 43, 0.8);
+  }
+  #langToggle {
+    position: fixed;
+    top: 20px; right: 20px;
+    background: rgba(255,255,255,0.7);
+    border: none; border-radius: 20px;
+    padding: 8px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #ff4b2b;
+    box-shadow: 0 3px 10px rgba(255, 75, 43, 0.5);
+    transition: background 0.3s ease;
+  }
+  #langToggle:hover {
+    background: #fff;
+  }
+  footer {
+    margin-top: 4em;
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.7);
+  }
+</style>
+</head>
+<body>
+  <button id="langToggle">English</button>
+  <header id="title">欢迎加入 We1Win 代理</header>
+  <p id="desc">成为 We1Win 的代理，轻松赚取佣金！点击下方按钮，立即注册并推广，开启你的线上博彩事业。</p>
+  <a href="http://www.we1win8.com/?referralCode=vnc9300&affiliateCode=od9ms" target="_blank" rel="noopener noreferrer" class="button" id="btn">立即注册 & 代理推广</a>
+  <footer>© 2025 We1Win 代理推广平台</footer>
+
+<script>
+  const langToggle = document.getElementById('langToggle');
+  const title = document.getElementById('title');
+  const desc = document.getElementById('desc');
+  const btn = document.getElementById('btn');
+  const footer = document.querySelector('footer');
+
+  let isChinese = true;
+  langToggle.addEventListener('click', () => {
+    if (isChinese) {
+      title.textContent = "Join We1Win as Agent";
+      desc.textContent = "Earn commissions easily by becoming a We1Win agent! Click the button below to register and start promoting your online betting business.";
+      btn.textContent = "Register & Promote Now";
+      footer.textContent = "© 2025 We1Win Agent Promotion Platform";
+      langToggle.textContent = "中文";
+      isChinese = false;
+    } else {
+      title.textContent = "欢迎加入 We1Win 代理";
+      desc.textContent = "成为 We1Win 的代理，轻松赚取佣金！点击下方按钮，立即注册并推广，开启你的线上博彩事业。";
+      btn.textContent = "立即注册 & 代理推广";
+      footer.textContent = "© 2025 We1Win 代理推广平台";
+      langToggle.textContent = "English";
+      isChinese = true;
+    }
+  });
+</script>
+</body>
+</html>
